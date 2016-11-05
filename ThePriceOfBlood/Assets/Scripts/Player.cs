@@ -19,8 +19,22 @@ public class Player : MonoBehaviour {
     private Animator mAnimator;
     private SpriteRenderer mSpriteRenderer;
 
+    // Weapon - GameObject enfant qui représente l'attaque
+    public Weapon mWeapon;
+
+    // Stats
+    // 0 - VIE, 1 - ATK, 2 - SPD, 3 - REGEN, 4 - ANTIREGEN, 5 - DEF
+    public int[] mStats;
+
     void Start()
     {
+        mStats = new int[6];
+        mStats[0] = 5;
+        mStats[1] = 5;
+        mStats[2] = 5;
+        mStats[3] = 5;
+        mStats[4] = 5;
+        mStats[5] = 5;
         mCurrentState = CharacterState.IDLE;
         mPosition = transform.position;
         mLook = Vector3.back;
@@ -76,15 +90,31 @@ public class Player : MonoBehaviour {
                         break;
                     }
 
+                    if (Input.GetKeyDown(KeyCode.Space))
+                    {
+                        mAnimator.SetBool("playerMoveBool", false);
+                        mCurrentState = CharacterState.ATTACK;
+                    }
                     break;
                 }
             case CharacterState.ATTACK:
                 {
+                    // "Instanciation" d'une attaque
+                    Instantiate(mWeapon, transform.position + mLook * 0.2f, Quaternion.identity, transform);
 
+                    mCurrentState = CharacterState.IDLE;
                     break;
                 }
         }
 
+        //Test du move
+        int layerMask = 1 << 11;
+        if (Physics.Linecast(transform.position, transform.position + mLook * 0.5f,layerMask))
+        {
+            Debug.Log("Collision");
+            mSpeed = Vector3.zero;
+        }
+ 
         mPosition += mSpeed * Time.deltaTime;
         transform.position = mPosition;
     }
