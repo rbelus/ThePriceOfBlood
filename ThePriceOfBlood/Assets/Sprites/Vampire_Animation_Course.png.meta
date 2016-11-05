@@ -1,0 +1,311 @@
+fileFormatVersion: 2
+guid: 1977650b1471a7f4fbe90d9221d0b95f
+timeCreated: 1478343587
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Vampire_Animation_Course_0
+    21300002: Vampire_Animation_Course_1
+    21300004: Vampire_Animation_Course_2
+    21300006: Vampire_Animation_Course_3
+    21300008: Vampire_Animation_Course_4
+    21300010: Vampire_Animation_Course_5
+    21300012: Vampire_Animation_Course_6
+    21300014: Vampire_Animation_Course_7
+    21300016: Vampire_Animation_Course_8
+    21300018: Vampire_Animation_Course_9
+    21300020: Vampire_Animation_Course_10
+    21300022: Vampire_Animation_Course_11
+    21300024: Vampire_Animation_Course_12
+    21300026: Vampire_Animation_Course_13
+    21300028: Vampire_Animation_Course_14
+    21300030: Vampire_Animation_Course_15
+    21300032: Vampire_Animation_Course_16
+    21300034: Vampire_Animation_Course_17
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Vampire_Animation_Course_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 9
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Vampire_Animation_Course_1
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 9
+        width: 23
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Vampire_Animation_Course_2
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 9
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Vampire_Animation_Course_3
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 9
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Vampire_Animation_Course_4
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 9
+        width: 41
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Vampire_Animation_Course_5
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 9
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Vampire_Animation_Course_6
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 9
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Vampire_Animation_Course_7
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 9
+        width: 43
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Vampire_Animation_Course_8
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 9
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Vampire_Animation_Course_9
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 9
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Vampire_Animation_Course_10
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 9
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Vampire_Animation_Course_11
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 9
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Vampire_Animation_Course_12
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 9
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Vampire_Animation_Course_13
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 9
+        width: 46
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Vampire_Animation_Course_14
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 8
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Vampire_Animation_Course_15
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 8
+        width: 38
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Vampire_Animation_Course_16
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 8
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Vampire_Animation_Course_17
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 8
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
