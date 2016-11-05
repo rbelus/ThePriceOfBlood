@@ -8,8 +8,8 @@ public class LookAtCamera : MonoBehaviour {
     void Start()
     {
         mCam = Camera.main;
-        transform.rotation = mCam.transform.rotation;
-        transform.rotation *= Quaternion.Euler(-40, 0, 0);
+        //transform.rotation = mCam.transform.rotation;
+        //transform.rotation *= Quaternion.Euler(-40, 0, 0);
     }
 
     void Update()

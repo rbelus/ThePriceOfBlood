@@ -7,16 +7,19 @@ public class Player : MonoBehaviour {
     public enum CharacterState { IDLE, MOVE, ATTACK };
     public CharacterState mCurrentState;
 
-    // Variables de gestion
+    // Variables de déplacement
     public Vector3 mPosition;
     public Vector3 mSpeed;
-
     public float mMoveSpeed;
+
+    // Regard
+    public Vector3 mLook;
 
     void Start()
     {
         mCurrentState = CharacterState.IDLE;
         mPosition = transform.position;
+        mLook = Vector3.back;
     }
 
     void Update()
@@ -28,12 +31,17 @@ public class Player : MonoBehaviour {
                     mSpeed = Vector3.zero;
 
                     // Cas ou on avance
-                    if (System.Math.Abs(Input.GetAxis("Horizontal")) > 0.2)
+                    if (System.Math.Abs(Input.GetAxis("Horizontal")) > 0.5 ||
+                            System.Math.Abs(Input.GetAxis("Vertical")) > 0.5)
                     {
                         mCurrentState = CharacterState.MOVE;
                         break;
                     }
 
+                    if (Input.GetKeyDown(KeyCode.Space))
+                    {
+                        mCurrentState = CharacterState.ATTACK;
+                    }
                     break;
                 }
             case CharacterState.MOVE:
@@ -41,17 +49,12 @@ public class Player : MonoBehaviour {
                     if (System.Math.Abs(Input.GetAxis("Horizontal")) > 0.5 ||
                             System.Math.Abs(Input.GetAxis("Vertical")) > 0.5)
                     {
-                        if (Input.GetAxis("Horizontal") > 0.5)
-                            mSpeed.x = mMoveSpeed;
-                        if (Input.GetAxis("Horizontal") < -0.5)
-                            mSpeed.x = -mMoveSpeed;
-                        if (Input.GetAxis("Vertical") > 0.5)
-                            mSpeed.z = mMoveSpeed;
-                        if (Input.GetAxis("Vertical") < -0.5)
-                            mSpeed.z = -mMoveSpeed;
+                        mSpeed.x = Input.GetAxis("Horizontal");
+                        mSpeed.z = Input.GetAxis("Vertical");
 
-                        Debug.Log("Speed value : " + mSpeed);
-
+                        mSpeed.Normalize();
+                        mLook = mSpeed;
+                        mSpeed *= mMoveSpeed;
                     }
                     else
                     {
@@ -64,6 +67,7 @@ public class Player : MonoBehaviour {
                 }
             case CharacterState.ATTACK:
                 {
+
                     break;
                 }
         }
