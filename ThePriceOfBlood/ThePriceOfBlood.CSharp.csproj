@@ -63,9 +63,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\EnBullet.cs" />
+    <Compile Include="Assets\Scripts\EnGun.cs" />
+    <Compile Include="Assets\Scripts\EngineMove.cs" />
+    <Compile Include="Assets\Scripts\EnnemyDistance.cs" />
+    <Compile Include="Assets\Scripts\EnnemyHoming.cs" />
+    <Compile Include="Assets\Scripts\IaInput.cs" />
+    <Compile Include="Assets\Scripts\InputController.cs" />
     <Compile Include="Assets\Scripts\LookAtCamera.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\Weapon.cs" />
+=======
+    <Compile Include="Assets\Scripts\smoothCamera.cs" />
+>>>>>>> master
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
