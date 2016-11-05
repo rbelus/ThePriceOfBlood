@@ -11,7 +11,6 @@ public class Player : MonoBehaviour {
     // Variables de déplacement
     public Vector3 mPosition;
     public Vector3 mSpeed;
-    public float mMoveSpeed;
 
     // Regard
     public Vector3 mLook;
@@ -26,22 +25,29 @@ public class Player : MonoBehaviour {
     // Stats
     // 0 - VIE, 1 - ATK, 2 - SPD, 3 - REGEN, 4 - ANTIREGEN, 5 - DEF
     public int[] mStats;
+    public int mInitVie;
+    public int mInitAtk;
+    public int mInitSpd;
+    public int mInitRegen;
+    public int mInitAntiregen;
+    public int mInitDef;
 
     // Vie actuelle
     public float mCurrentLife;
 
     // UI
     public Slider mLifeSlider;
+    public Text mStatsUI;
 
     void Start()
     {
         mStats = new int[6];
-        mStats[0] = 5;
-        mStats[1] = 5;
-        mStats[2] = 5;
-        mStats[3] = 5;
-        mStats[4] = 5;
-        mStats[5] = 5;
+        mStats[0] = mInitVie;
+        mStats[1] = mInitAtk;
+        mStats[2] = mInitSpd;
+        mStats[3] = mInitRegen;
+        mStats[4] = mInitAntiregen;
+        mStats[5] = mInitDef;
         mCurrentState = CharacterState.IDLE;
         mPosition = transform.position;
         mLook = Vector3.back;
@@ -89,7 +95,7 @@ public class Player : MonoBehaviour {
 
                         mSpeed.Normalize();
                         mLook = mSpeed;
-                        mSpeed *= mMoveSpeed;
+                        mSpeed *= mStats[2];
                     }
                     else
                     {
@@ -130,8 +136,11 @@ public class Player : MonoBehaviour {
         // Affichage de la vie
         mLifeSlider.value = mCurrentLife / mStats[0];
 
+        // Affichage des stats
+        mStatsUI.text = "ATK : " + mStats[1] + "  SPD : " + mStats[2] + "  REGEN : " + mStats[3] + "  BLOODLOSS : " + mStats[4];
+
         // Perte de vie
-        mCurrentLife -= 0.3f * Time.deltaTime;
+        mCurrentLife -= mStats[4] * Time.deltaTime;
 
         // DID YOU JUST DIE ? BITCH
         if (mCurrentLife <= 0)
