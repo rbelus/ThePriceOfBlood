@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnnemyDistance : MonoBehaviour {
+public class EnnemyDistance : Enemy {
 
     public float speed = 0.1f;
     public GameObject target;

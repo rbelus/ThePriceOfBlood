@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\EngineMove.cs" />
     <Compile Include="Assets\Scripts\EnnemyDistance.cs" />
     <Compile Include="Assets\Scripts\EnnemyHoming.cs" />
+    <Compile Include="Assets\Scripts\EnnemyStatic.cs" />
     <Compile Include="Assets\Scripts\IaInput.cs" />
     <Compile Include="Assets\Scripts\InputController.cs" />
     <Compile Include="Assets\Scripts\LookAtCamera.cs" />

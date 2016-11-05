@@ -16,8 +16,11 @@ public class Weapon : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("TOUCHAY : " + mDamage);
-        other.GetComponent<Enemy>().TakeDamage(mDamage);
+        if (other.gameObject.tag == "Enemy")
+        {
+            Debug.Log("TOUCHAY : " + mDamage);
+            other.GetComponent<Enemy>().TakeDamage(mDamage);
+        }
     }
 
     void Update()

@@ -36,7 +36,7 @@ public class Player : MonoBehaviour {
     void Start()
     {
         mStats = new int[6];
-        mStats[0] = 5;
+        mStats[0] = 20;
         mStats[1] = 5;
         mStats[2] = 5;
         mStats[3] = 5;
@@ -140,5 +140,13 @@ public class Player : MonoBehaviour {
         // Update Position
         mPosition += mSpeed * Time.deltaTime;
         transform.position = mPosition;
+    }
+
+    public void TakeDamage(float damage)
+    {
+        mCurrentLife -= damage;
+        if (mCurrentLife <= 0)
+            Destroy(this.gameObject);
+
     }
 }

@@ -5,6 +5,7 @@ public class EnBullet : MonoBehaviour
 {
     public GameObject target;
     private Vector3 direction;
+    public float mDamage;
     public float speed = 1;
 
     // Use this for initialization
@@ -28,14 +29,22 @@ public class EnBullet : MonoBehaviour
         this.transform.position += (direction * speed);
     }
 
-
-   /* void OnTriggerEnter2D(Collider2D col)
+    void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Bim !", gameObject);
-        Debug.Log(col.gameObject.tag);
-        if (col.gameObject.tag == "Ennemy")
+        if (other.gameObject.tag == "Player")
         {
-            Destroy(col.gameObject);
+            Debug.Log("TOUCHAY : " + mDamage);
+            other.GetComponent<Player>().TakeDamage(mDamage);
         }
-    }*/
+    }
+
+    /* void OnTriggerEnter2D(Collider2D col)
+     {
+         Debug.Log("Bim !", gameObject);
+         Debug.Log(col.gameObject.tag);
+         if (col.gameObject.tag == "Ennemy")
+         {
+             Destroy(col.gameObject);
+         }
+     }*/
 }
