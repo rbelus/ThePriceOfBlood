@@ -14,10 +14,10 @@ public class Weapon : MonoBehaviour {
         mDamage = GetComponentInParent<Player>().mStats[1];
     }
 
-    void OnTriggerStay(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         Debug.Log("TOUCHAY : " + mDamage);
-        Destroy(other.gameObject);
+        other.GetComponent<Enemy>().TakeDamage(mDamage);
     }
 
     void Update()

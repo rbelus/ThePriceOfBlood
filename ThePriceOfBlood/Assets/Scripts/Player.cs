@@ -93,6 +93,7 @@ public class Player : MonoBehaviour {
                     if (Input.GetKeyDown(KeyCode.Space))
                     {
                         mAnimator.SetBool("playerMoveBool", false);
+                        mAnimator.SetTrigger("playerAttack");
                         mCurrentState = CharacterState.ATTACK;
                     }
                     break;
@@ -101,6 +102,8 @@ public class Player : MonoBehaviour {
                 {
                     // "Instanciation" d'une attaque
                     Instantiate(mWeapon, transform.position + mLook * 0.2f, Quaternion.identity, transform);
+
+                    mAnimator.SetTrigger("playerAttack");
 
                     mCurrentState = CharacterState.IDLE;
                     break;

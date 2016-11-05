@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnnemyHoming : MonoBehaviour {
+public class EnnemyHoming : Enemy {
 
     public float speed = 0.1f;
     public GameObject target;
